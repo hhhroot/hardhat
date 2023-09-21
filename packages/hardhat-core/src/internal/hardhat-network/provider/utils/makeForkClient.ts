@@ -44,7 +44,8 @@ export async function makeForkClient(
   const maxReorg = actualMaxReorg ?? FALLBACK_MAX_REORG;
 
   const latestBlock = await getLatestBlockNumber(provider);
-  const lastSafeBlock = getLastSafeBlock(latestBlock, maxReorg);
+  // const lastSafeBlock = getLastSafeBlock(latestBlock, maxReorg);
+  const lastSafeBlock = latestBlock;
 
   let forkBlockNumber;
   if (forkConfig.blockNumber !== undefined) {

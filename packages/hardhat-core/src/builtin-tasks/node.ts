@@ -56,6 +56,7 @@ function logHardhatNetworkAccounts(networkConfig: HardhatNetworkConfig) {
 
   console.log("Accounts");
   console.log("========");
+  console.log("@@@@@@@@@");
 
   if (isDefaultConfig) {
     console.log();
